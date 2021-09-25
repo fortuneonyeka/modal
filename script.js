@@ -4,6 +4,7 @@ const showModal = document.querySelectorAll('.show-modal')
 const btnCloseModal = document.querySelector('.close-modal')
 const overlay = document.querySelector('.overlay')
 
+//OPENMODAL FUNCTION
 const openModal = () => {
   modal.classList.remove('hidden')
   overlay.classList.remove('hidden')
@@ -19,7 +20,7 @@ for (let i = 0; i < showModal.length; i++) {
     openModal()
   })
   }
-
+//CLOSEMODAL FUNCTION
   const closeModal = () => {
     modal.classList.add('hidden')
     overlay.classList.add('hidden')
@@ -36,3 +37,10 @@ btnCloseModal.addEventListener('click', () => {
 
 //WITHOUT ARROW FUNCTION
 overlay.addEventListener('click', closeModal)
+
+//CLOSING MODAL WITH ESC KEY
+document.addEventListener('keydown', (e) => {
+ if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+  closeModal()
+ }
+})
