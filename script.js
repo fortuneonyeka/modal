@@ -15,3 +15,13 @@ for (let i = 0; i < showModal.length; i++) {
     // overlay.style.display = 'block'
   })
   }
+
+  const closeModal = () => {
+    modal.classList.add('hidden')
+    overlay.classList.add('hidden')
+  
+    // OR
+    // modal.style.display = 'none'
+    // overlay.style.display = 'none'
+  }
+  
