@@ -25,7 +25,10 @@ for (let i = 0; i < showModal.length; i++) {
     // overlay.style.display = 'none'
   }
 
-  /WITH ARROW FUNCTION
+  // /WITH ARROW FUNCTION
 btnCloseModal.addEventListener('click', () => {
   closeModal()
 });
+
+//WITHOUT ARROW FUNCTION
+overlay.addEventListener('click', closeModal)
