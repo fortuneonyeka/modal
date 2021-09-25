@@ -24,4 +24,8 @@ for (let i = 0; i < showModal.length; i++) {
     // modal.style.display = 'none'
     // overlay.style.display = 'none'
   }
-  
+
+  /WITH ARROW FUNCTION
+btnCloseModal.addEventListener('click', () => {
+  closeModal()
+});
